@@ -4,7 +4,6 @@
  <style>
   .grid-container {
     width: 300px;
-    align-items: center;
     display: grid;
     grid-template-columns: auto auto auto ;
   }
@@ -13,6 +12,7 @@
     height: 100px;
     width: 100px;
     border: 1px solid;
+    font-size: 80px;
   }
  </style>
  <title>Tic Tac Toe</title>
@@ -20,17 +20,28 @@
 <body>
   <h1>Tic Tac Toe</h1>
     <div id="app" class="grid-container">
-      <div id='0' class='grid-item'>1</div>
-      <div id='1'class='grid-item'>2</div>
-      <div id='2'class='grid-item'>3</div>
-      <div id='3'class='grid-item'>4</div>
-      <div id='4'class='grid-item'>5</div>
-      <div id='5'class='grid-item'>6</div>
-      <div id='6'class='grid-item'>7</div>
-      <div id='7'class='grid-item'>8</div>
-      <div id='8'class='grid-item'>9</div>
+      <div id='0' class='grid-item'></div>
+      <div id='1'class='grid-item'></div>
+      <div id='2'class='grid-item'></div>
+      <div id='3'class='grid-item'></div>
+      <div id='4'class='grid-item'></div>
+      <div id='5'class='grid-item'></div>
+      <div id='6'class='grid-item'></div>
+      <div id='7'class='grid-item'></div>
+      <div id='8'class='grid-item'></div>
     </div>
     <button id='reset'>Reset The Board</button>
+    <div id='turn'></div>
+    <table>
+      <tr>
+        <th id='x-name'>X Wins</th>
+        <th id='o-name'>O Wins</th>
+      </tr>
+      <tr>
+        <th id='x-wins'></th>
+        <th id='o-wins'></th>
+      </tr>
+    </table>
   <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
